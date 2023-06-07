@@ -3,7 +3,7 @@
 ## <u>**Version 2.2.0 - Sep 30, 2022**</u>                 
 [ Download](https://download.batem.com) 
 
-### <span style="color:dodgerblue">*Diagram 변경사항*</span>
+### <span style="color:red">*Diagram 변경사항*</span>
 - Loop : Loop의 왼쪽이나, 오른쪽에 다른 Item을 놓고(왼쪽 상단을 잡고 Drag) 움지기면 분리되거나 늘어나는 현상 패치
 - Loop : LoopItem 깨지는 버그 수정
 - Loop : Loop 아이템에 description 프로퍼티 추가
