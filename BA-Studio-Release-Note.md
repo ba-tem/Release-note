@@ -1,5 +1,35 @@
 # **Release History of BA-Studio**
 
+## **$\textcolor{dodgerblue}{\textsf{Version 2.3.0 - Jun 09, 2023}}$**  
+### *신규*
+- 시작페이지 생성 : 신규 파일, 파일 오픈, 신규 프로젝트, 프로젝트 오픈을 선택할 수 있는 시작 페이지 생성
+- [debug] 폰트 및 폰트 사이즈 변경, 창 크기 변경, 속도 향상을 위해 컨트롤 변경   
+- [print diagram] 다이아그램을 이미지로 출력하는 기능 추가   
+- [diagram color] 다이아그램의 색상을 변경 기능 추가 
+- fp파일에 정보파일 추가    
+- [TaskConverter] 하위 버전 호환을 위한 Task Converter 추가
+- [BARecorder] 키보드와 마우스 이벤트를 모니터링(레코딩)하여 새로운 Task 자동생성    
+- [Setting] 새로운 창으로 setting을 설정할 수 있도록 수정    
+- [Setting] 오류가 발생할 경우 오류 내용을 표시하는 Error Message Mode 옵션 생성    
+- [Setting] 자동 저장 여부를 지정하는 Auto Save 옵션 생성    
+- [Setting] PropertyForm 사용 여부를 지정하는 옵션 생성    
+- [Setting] ScreenRecording 사용 여부를 지정하는 옵션 생성    
+- 가독성이 향상된 다이어그램 프로퍼티 창 새로 생성    
+- [Web Picker] shift + tab을 이용하여 브라우저 탭과 창을 이동할 수 있다.    
+- [Web Picker] 크롬브라우저의 경우 기존에 떠있는 브라우저에 픽커를 생성할 수 있다. (크롬이 디버그 모드여야 한다.)    
+- [Web Picker] 픽커가 생성될 수 없는 환경에서는 안내 메시지 박스를 띄우고 픽커가 생성이 가능할 페이지 이동까지 대기한다.
+
+### *변경*   
+- .Net Framework 업데이트 : 4.5 => 4.8    
+- Devexpress 업데이트 : 18.1.3 => 22.2    
+- 모든 창과 프로그램 기본 테마 변경    
+- [Web Picker] xpath도 뽑아 올 수 있도록 기능 변경
+- [Picker] 마우스의 x, y 좌표를 가져오도록 기능 변경
+- StartItem 생성 방법 변경    
+- [Predefine task] 태스크의 이름으로 텍스트 추가
+
+<br/>   
+
 ## **$\textcolor{dodgerblue}{\textsf{Version 2.2.0 - Sep 30, 2022}}$**     
 ### *Diagram 변경사항*
 - Loop : Loop의 왼쪽이나, 오른쪽에 다른 Item을 놓고(왼쪽 상단을 잡고 Drag) 움지기면 분리되거나 늘어나는 현상 패치
