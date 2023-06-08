@@ -1,7 +1,25 @@
 # **Release History of BA-Assist**   
 
+## **$\textcolor{dodgerblue}{\textsf{Version 2.3.0 - Jun 09, 2023}}$**   
+### *신규*    
+- Dashboard : 태스크의 작동 현황을 표시하는 Dashboard 패널 추가   
+- Schedule :  태스크의 스케쥴을 표시하는 Schedule 패널 추가   
+- Schedule export 기능 추가   
+- Setting export 기능 추가    
+- [ScreenRecording] 태스크 실행시 실행화면을 녹화하는 기능 추가   
+  
+### *변경*   
+- .Net Framework 업데이트 : 4.5 => 4.8    
+- Devexpress 업데이트 : 18.1.3 => 22.2  
+- 테마 및 컨트롤 디자인 변경   
+- [Task list] Grid 타입의 리스트에서 Card 타입의 리스트로 변경   
+- 스케줄 기능 설명 추가    
+- Queue 기능 설명 추가    
+  
+<br/>
+
+
 ## **$\textcolor{dodgerblue}{\textsf{Version 2.2.0 - Sep 30, 2022}}$**     
-[ Download](https://download.batem.com) 
 
 ### *신규 기능*   
 <li>에러 발생 시 ScreenShot 기능을 켜고 끌 수 있도록 옵션 추가</li>
@@ -15,7 +33,6 @@
 <li>oneline이라는 새로운 로그 모드 생성</li>   
 
 ## **$\textcolor{dodgerblue}{\textsf{Version 2.1.6 - Jan 04, 2022}}$**     
-[ Download](https://download.batem.com)   
 
 ### *신규 기능*    
 <li>Log Print Option 추가 : full, normal, simple, none</li>
@@ -26,20 +43,17 @@
 <li>Dashboard : 사용되는 DB를 MariaDB에서 SQLite로 변경</li>    
 
 ## **$\textcolor{dodgerblue}{\textsf{Version 2.1.5 - Jun 16, 2021}}$**     
-[ Download](https://download.batem.com)    
 
 ### *변경 사항*     
 <li>Task 실행 버그 수정</li>    
 
 ## **$\textcolor{dodgerblue}{\textsf{Version 2.1.4 - May 14, 2021}}$**     
-[ Download](https://download.batem.com)    
 
 ### *신규 기능*    
 <li>Update Task 기능 추가  => Task 파일 변경시 Task 삭제/추가가 아닌 Update Task 파일 변경 (동일한 파일을 업데이트 하는 경우에 적용됩니다.)</li>
 <li>Open folder in file exploer  => Task 파일 위치 열기</li>    
 
 ## **$\textcolor{dodgerblue}{\textsf{Version 2.1.3 - Jun 16, 2021}}$**     
-[ Download](https://download.batem.com)    
 
 ### *신규 기능*   
 <li>Log - 에러내용을 팝업창에서 상세 확인 - Message 셀 우클릭 </li>
@@ -50,7 +64,6 @@
 <li>Block Keyboard & Mouse : 스케줄 실행시에도 Block 처리.</li>     
 
 ## **$\textcolor{dodgerblue}{\textsf{Version 2.1.2 - Jan 14, 2021}}$**     
-[ Download](https://download.batem.com)    
 
 ### *신규 기능*    
 <li>Dashoboard 설정 및 연동 기능 추가 </li>   
@@ -59,14 +72,11 @@
 <li>BA Player 동시실행 개선</li>    
 
 ## **$\textcolor{dodgerblue}{\textsf{Version 2.1.1 - Nov 5, 2020}}$**     
-[ Download](https://download.batem.com)    
 
 *v2.1.1 BA-Assist는 변경사항 없이, 엔진만 변경되었습니다.*    
 
 
 ## **$\textcolor{dodgerblue}{\textsf{Version 2.1.0 - Sep 25, 2020}}$**     
-[ Download](https://download.batem.com)    
-
 ### *변경 사항*    
 <li>Task 폴더 삭제 관련 버그 픽스</li>        
 <li>UI 개선</li>
