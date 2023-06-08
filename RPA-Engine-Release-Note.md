@@ -6,6 +6,9 @@
 - [PDF] getTextFromRect : PDF 파일의 특정 영역의 텍스트를 가져오는 액티비티, 특정 영역의 선택은 시작 x, y 좌표 높이, 길이로 지정합니다.   
 - [Common] WaitForProcess : 특정 프로세스가 실행되기를 대기하는 액티비티 , 프로세스의 이름은 작업 관리자에서 참조   
 - [OCR] TesseractOCR Image To Text : 테서렉트 OCR을 사용하여 이미지에서 텍스트를 추출하는 액티비티, 테서렉트 엔진을 따로 설치해야하며, 전처리 옵션을 선택할 수 있다.
+- pandas library 추가 (1.5.3)   
+- pynput library 추가 (1.7.6)   
+
 
 ### *변경*    
 - [web] Open browser : 로딩타임아웃 시간지정 , Headless 실행 , userdata 사용 , 자동화메시지 표시 , 웹드라이버 경로 설정 (폐쇄망)   
