@@ -1,5 +1,27 @@
 # **Release History of RPA-Engine**   
 
+## **$\textcolor{dodgerblue}{\textsf{Version 2.3.0 - Jun 09, 2023}}$**   
+### *신규*    
+- [web] Table To List : table 태그의 값을 리스트로 가져오는 액티비티 , table 태그의 구조 그대로 2중 리스트로 반환한다. 옵션을 이용하여 추출 시작행, 끝 행을 지정하여 추출할 수 있다.   
+- [PDF] getTextFromRect : PDF 파일의 특정 영역의 텍스트를 가져오는 액티비티, 특정 영역의 선택은 시작 x, y 좌표 높이, 길이로 지정합니다.   
+- [Common] WaitForProcess : 특정 프로세스가 실행되기를 대기하는 액티비티 , 프로세스의 이름은 작업 관리자에서 참조   
+- [OCR] TesseractOCR Image To Text : 테서렉트 OCR을 사용하여 이미지에서 텍스트를 추출하는 액티비티, 테서렉트 엔진을 따로 설치해야하며, 전처리 옵션을 선택할 수 있다.
+
+### *변경*    
+- [web] Open browser : 로딩타임아웃 시간지정 , Headless 실행 , userdata 사용 , 자동화메시지 표시 , 웹드라이버 경로 설정 (폐쇄망)   
+- [web] Click, DoubleClick : 엘리먼트 타입지정(css , Xpath , ClassName , ID, TagName) , WaitClickable , aitParams   
+- [web] GetAttribute , GetItem , GetText , SaveElementeImage , Scroll into element, Sendkeys , SetValue , Wait Disappear, Select : 엘리먼트 타입지정(css , Xpath , ClassName , ID, TagName), waitParams   
+- [web] Select dropbox item : 엘리먼트 타입지정 (css , Xpath , ClassName , ID, TagName ) , waitParams , select index/value/text(추가됨)   
+- [web] Switch Frame : 기본 프레임으로 돌아가는 SwitchDefault 프로퍼티 추가
+- [web] Timesleep(property) : 각 액티비티에 기능 후 잠시 대기 기능 추가 (Default 0) , Wait 액티비티 사용을 줄이기 위해 프로퍼티 추가
+- [PDF] Password(property) : 비밀번호가 있는 문서를 처리 위한 Password 확인 프로퍼티 추가
+- [win32] Timesleep(property) : 각 액티비티에 기능 후 잠시 대기 기능 추가 (Default 0) , Wait 액티비티 사용을 줄이기 위해 프로퍼티 추가
+- [Common] WaitForProcessWindow : 최대 대기시간 지정하는 timeout 프로퍼티 추가
+- [HWP] Save As HWP : pdf 저장 옵션 추가
+- [Excel] SetNumberFormatRange : 기존 format 옵션 수동입력 방식에서 Select 방식으로 변경, "G/표준", "0.00", "0.00%", "mm/dd/yyyy", "hh:mm:ss", "0.00E+00", "@" 중  선택이 가능하다.   
+  
+<br/>   
+
 ## **$\textcolor{dodgerblue}{\textsf{Version 2.2.0 - Sep 30, 2022}}$**     
 
 ### *신규 기능*   
