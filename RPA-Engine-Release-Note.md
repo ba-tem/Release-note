@@ -1,5 +1,12 @@
 # **Release History of RPA-Engine**   
 
+## **$\textcolor{dodgerblue}{\textsf{Version 2.3.1 - Aug 07, 2023}}$**  
+### *변경*
+- [Web] chrome 고정된 버전의 바이너리(브라우저) 와 고정된 버전의 드라이버를 사용하도록 수정
+- [PickerWeb]  chrome은 고정된 버전의 바이너리(브라우저) 와 고정된 버전의 드라이버를 사용하도록 수정
+- <u>Google 최신 드라이버 업데이트와 정책변경으로 2.3.0에서 적용되었던 chrome 드라이버 자동업데이트 기능 제외</u>
+
+
 ## **$\textcolor{dodgerblue}{\textsf{Version 2.3.0 - Jun 09, 2023}}$**   
 ### *신규*    
 - [web] Table To List : table 태그의 값을 리스트로 가져오는 액티비티 , table 태그의 구조 그대로 2중 리스트로 반환한다. 옵션을 이용하여 추출 시작행, 끝 행을 지정하여 추출할 수 있다.   
