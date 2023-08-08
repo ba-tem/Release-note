@@ -1,5 +1,14 @@
 # **Release History of BA-Studio**
 
+## **$\textcolor{dodgerblue}{\textsf{Version 2.3.1 - Aug 07, 2023}}$**  
+### *변경*
+- [Property Window] Decision 액티비티의 경우 프로퍼티 폼 더블클릭으로 안뜨도록 변경
+- [Property Window] taskname, filename 설명 추가
+- [Find String In Value, Find Number In Value] join 프로퍼티 반대로 적힌 부분 수
+- [Variables] 테마변경으로 너무 좁아져서 높이 변경
+- [Diagram] Highlighter 부분 선 연결 안되도록 변경
+- [Connector] Connecter 메뉴 클릭 후 발생하는 일부 버그 수정
+
 ## **$\textcolor{dodgerblue}{\textsf{Version 2.3.0 - Jun 09, 2023}}$**  
 ### *신규*
 - 시작페이지 생성 : 신규 파일, 파일 오픈, 신규 프로젝트, 프로젝트 오픈을 선택할 수 있는 시작 페이지 생성
