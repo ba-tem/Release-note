@@ -1,5 +1,9 @@
 # **Release History of BA-Assist**   
 
+## **$\textcolor{dodgerblue}{\textsf{Version 2.3.1 - Aug 07, 2023}}$**  
+### *변경*
+- 화면 Hide 상태인 경우 작업목록(Alt+Tab)에서 보이지 않도록 처리
+
 ## **$\textcolor{dodgerblue}{\textsf{Version 2.3.0 - Jun 09, 2023}}$**   
 ### *신규*    
 - Dashboard : 태스크의 작동 현황을 표시하는 Dashboard 패널 추가   
