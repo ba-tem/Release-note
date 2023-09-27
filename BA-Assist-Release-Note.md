@@ -1,5 +1,12 @@
 # **Release History of BA-Assist**   
 
+## **Version 2.4.0 - Sep 26, 2023** 
+### *신규*  
+- [Setting] ScreenSaver off 기능 활성화
+
+### *변경*
+- Log 검색 필터 날짜 설정 변경 (최초는 오늘 날짜로 설정되도록 수정)
+  
 ## **Version 2.3.1 - Aug 07, 2023**
 ### *변경*
 - 화면 Hide 상태인 경우 작업목록(Alt+Tab)에서 보이지 않도록 처리
