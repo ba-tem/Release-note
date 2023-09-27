@@ -1,5 +1,26 @@
 # **Release History of BA-Studio**
 
+## **Version 2.4.0 - Sep 26, 2023** 
+### *신규*
+- [MultiThread] 멀티스레드 기능 추가 , 전용 액티비티  
+- [MultiThread] 한 스레드내에서 공유가 가능한 스레드 변수 T 추가 ex) T["변수명"] = 값
+- [Validation] 메뉴 추가 - Connector, MultiThread 유효성 검사
+- [Properties] 프로퍼티 설명 창 추가
+- [기타] StartPage - 메뉴얼 링크, Release Note 링크 추가
+
+    
+### *변경*
+- [UI] Flow Chart창 삭제, BuiltIn 그룹 생성, Project Tree 창 왼쪽 상단 위치, Property 창 크기 확장, status bar 숨김
+- [Properties window] additional 지원
+- [Properties] imageview 스크롤 기능 추가
+- [Diagram] Loop 액티비티 최하단으로 위치하여 안에 액티비티 클릭이 되도록 수정
+- [Diagrma] 로드 이후 Loop 사이즈 조절이 불가한 문제 해결
+- [Diagrma] Find 기능에서 Loop 액티비티는 못 찾는 문제 수정  
+- [log]  engine Exception 발생시 log창에 출력하도록 수정
+- [기타] 캡쳐 이미지 tmp 파일이 남는 문제 해결
+
+
+
 ## **Version 2.3.1 - Aug 07, 2023**  
 ### *변경*
 - [Property Window] Decision 액티비티의 경우 프로퍼티 폼 더블클릭으로 안뜨도록 변경
