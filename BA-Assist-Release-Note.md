@@ -1,10 +1,10 @@
 # **Release History of BA-Assist**   
 
-## **$\textcolor{dodgerblue}{\textsf{Version 2.3.1 - Aug 07, 2023}}$**  
+## **Version 2.3.1 - Aug 07, 2023**
 ### *변경*
 - 화면 Hide 상태인 경우 작업목록(Alt+Tab)에서 보이지 않도록 처리
 
-## **$\textcolor{dodgerblue}{\textsf{Version 2.3.0 - Jun 09, 2023}}$**   
+## **Version 2.3.0 - Jun 09, 2023** 
 ### *신규*    
 - Dashboard : 태스크의 작동 현황을 표시하는 Dashboard 패널 추가   
 - Schedule :  태스크의 스케쥴을 표시하는 Schedule 패널 추가   
@@ -23,7 +23,7 @@
 <br/>
 
 
-## **$\textcolor{dodgerblue}{\textsf{Version 2.2.0 - Sep 30, 2022}}$**     
+## **Version 2.2.0 - Sep 30, 2022**   
 
 ### *신규 기능*   
 <li>에러 발생 시 ScreenShot 기능을 켜고 끌 수 있도록 옵션 추가</li>
@@ -36,7 +36,7 @@
 <li>진행 중인 작업을 중지하는 버튼 추가</li>
 <li>oneline이라는 새로운 로그 모드 생성</li>   
 
-## **$\textcolor{dodgerblue}{\textsf{Version 2.1.6 - Jan 04, 2022}}$**     
+## **Version 2.1.6 - Jan 04, 2022**   
 
 ### *신규 기능*    
 <li>Log Print Option 추가 : full, normal, simple, none</li>
@@ -46,18 +46,18 @@
 ### *변경 사항*     
 <li>Dashboard : 사용되는 DB를 MariaDB에서 SQLite로 변경</li>    
 
-## **$\textcolor{dodgerblue}{\textsf{Version 2.1.5 - Jun 16, 2021}}$**     
+## **Version 2.1.5 - Jun 16, 2021**   
 
 ### *변경 사항*     
 <li>Task 실행 버그 수정</li>    
 
-## **$\textcolor{dodgerblue}{\textsf{Version 2.1.4 - May 14, 2021}}$**     
+## **Version 2.1.4 - May 14, 2021**   
 
 ### *신규 기능*    
 <li>Update Task 기능 추가  => Task 파일 변경시 Task 삭제/추가가 아닌 Update Task 파일 변경 (동일한 파일을 업데이트 하는 경우에 적용됩니다.)</li>
 <li>Open folder in file exploer  => Task 파일 위치 열기</li>    
 
-## **$\textcolor{dodgerblue}{\textsf{Version 2.1.3 - Jun 16, 2021}}$**     
+## **Version 2.1.3 - Jun 16, 2021**   
 
 ### *신규 기능*   
 <li>Log - 에러내용을 팝업창에서 상세 확인 - Message 셀 우클릭 </li>
@@ -67,7 +67,7 @@
 ### *변경 사항*   
 <li>Block Keyboard & Mouse : 스케줄 실행시에도 Block 처리.</li>     
 
-## **$\textcolor{dodgerblue}{\textsf{Version 2.1.2 - Jan 14, 2021}}$**     
+## **Version 2.1.2 - Jan 14, 2021**   
 
 ### *신규 기능*    
 <li>Dashoboard 설정 및 연동 기능 추가 </li>   
@@ -75,12 +75,12 @@
 ### *변경 사항*   
 <li>BA Player 동시실행 개선</li>    
 
-## **$\textcolor{dodgerblue}{\textsf{Version 2.1.1 - Nov 5, 2020}}$**     
+## **Version 2.1.1 - Nov 5, 2020**   
 
 *v2.1.1 BA-Assist는 변경사항 없이, 엔진만 변경되었습니다.*    
 
 
-## **$\textcolor{dodgerblue}{\textsf{Version 2.1.0 - Sep 25, 2020}}$**     
+## **Version 2.1.0 - Sep 25, 2020**   
 ### *변경 사항*    
 <li>Task 폴더 삭제 관련 버그 픽스</li>        
 <li>UI 개선</li>
