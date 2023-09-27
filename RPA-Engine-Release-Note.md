@@ -1,5 +1,12 @@
 # **Release History of RPA-Engine**   
 
+## **Version 2.4.0 - Sep 26, 2023** 
+### *신규*
+- [Common] BreakThread 액티비티 추가
+- [Common] GetThreadName 액티비티 추가
+- [Excel] 속도가 향상된 WriteCollection2 액티비티 추가
+- [Excel, Word, Hwp] 인스턴스 생성시 headless 옵션 추가
+
 ## **Version 2.3.1 - Aug 07, 2023**
 ### *변경*
 - [Web] chrome 고정된 버전의 바이너리(브라우저) 와 고정된 버전의 드라이버를 사용하도록 수정
