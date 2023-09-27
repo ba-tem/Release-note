@@ -1,13 +1,13 @@
 # **Release History of RPA-Engine**   
 
-## **$\textcolor{dodgerblue}{\textsf{Version 2.3.1 - Aug 07, 2023}}$**  
+## **Version 2.3.1 - Aug 07, 2023**
 ### *변경*
 - [Web] chrome 고정된 버전의 바이너리(브라우저) 와 고정된 버전의 드라이버를 사용하도록 수정
 - [PickerWeb]  chrome은 고정된 버전의 바이너리(브라우저) 와 고정된 버전의 드라이버를 사용하도록 수정
 - <u>Google 최신 드라이버 업데이트와 정책변경으로 2.3.0에서 적용되었던 chrome 드라이버 자동업데이트 기능 제외</u>
 
 
-## **$\textcolor{dodgerblue}{\textsf{Version 2.3.0 - Jun 09, 2023}}$**   
+## **Version 2.3.0 - Jun 09, 2023** 
 ### *신규*    
 - [web] Table To List : table 태그의 값을 리스트로 가져오는 액티비티 , table 태그의 구조 그대로 2중 리스트로 반환한다. 옵션을 이용하여 추출 시작행, 끝 행을 지정하여 추출할 수 있다.   
 - [PDF] getTextFromRect : PDF 파일의 특정 영역의 텍스트를 가져오는 액티비티, 특정 영역의 선택은 시작 x, y 좌표 높이, 길이로 지정합니다.   
@@ -32,7 +32,7 @@
   
 <br/>   
 
-## **$\textcolor{dodgerblue}{\textsf{Version 2.2.0 - Sep 30, 2022}}$**     
+## **Version 2.2.0 - Sep 30, 2022**   
 
 ### *신규 기능*   
 <li>[web]Click Alert - 브라우저의 alert창을 클릭하는 액티비티 생성</li>
@@ -111,7 +111,7 @@
 <li>[WIN32]Convert to Grayscale	-	threshold 값을 변경하면 정확히 임계값 처리가 되도록 수정	</li>
 <li>[DATETIME]Today	-	오류가 발생하지 않고 정확히 날짜 연산이 되도록 수정	</li>     
 
-## **$\textcolor{dodgerblue}{\textsf{Version 2.1.6 - Jan 04, 2022}}$**     
+## **Version 2.1.6 - Jan 04, 2022**   
 
 ### *신규 기능*    
 <li>[win32]- MoveMouse(신규) : x, y 좌표로 마우스 커서를 이동시키는 액티비티	</li>
@@ -151,7 +151,7 @@
 <li>On error : Error Count 횟수 지정 옵션 추가</li>
 <li>today : 날짜 연산시 day out of range 오류 해결 및 정확한 날짜 연산을 위해 윤년인진 확인하는 함수 구현</li>    
 
-## **$\textcolor{dodgerblue}{\textsf{Version 2.1.5 - Jun 16, 2021}}$**     
+## **Version 2.1.5 - Jun 16, 2021**   
 
 ### *신규 기능*     
 <li>[file] - Compress Folder : (신규추가) 폴더를 zip 파일로 압축</li>
@@ -173,7 +173,7 @@
 <li>OnError : Jump 예외로 빠지는 경우는 OnError Loop Count에서 제외</li>    
 <li>[PDF ]- Convert to Grey : 한글 경로 정상적으로 실행되도록 수정함</li>    
 
-## **$\textcolor{dodgerblue}{\textsf{Version 2.1.4 - May 14, 2021}}$**      
+## **Version 2.1.4 - May 14, 2021**    
 
 ### *신규 기능*     
 <li>[PDF] Total page Count 추가</li>
@@ -192,7 +192,7 @@
 <li>[file] AppendToTextFile 액티비티 - 숫자형(int, float) 데이터 인자로 전달 시 string으로 변경하는 작업 추가</li>
 <li>LogWrite : 텍스트 파일 입력 시 받는 변수의 타입을 모두 string으로 변경</li>    
 
-## **$\textcolor{dodgerblue}{\textsf{Version 2.1.3 - Jun 16, 2021}}$**      
+## **Version 2.1.3 - Jun 16, 2021**    
 
 ### *신규 기능*     
 <li>[Excel] CopyFilteredRows</li>
@@ -206,7 +206,7 @@
 <li>[Excel]OpenWorkbook - 엑셀 파일간 데이터 참조시, Update 팝업창 비활성화 옵션 추가</li>
 <li>[Win32]Automation ClassName 활용한 Path Select방식과 이전 버전에서 사용된 방식을 동일하게 사용할 수 있도록 패치</li>     
 
-## **$\textcolor{dodgerblue}{\textsf{Version 2.1.2 - Jan 14, 2021}}$**      
+## **Version 2.1.2 - Jan 14, 2021**    
 
 ### *신규 기능*      
 <li>Dashoboard 설정 및 연동 기능 추가 </li>     
@@ -214,7 +214,7 @@
 ### *변경 사항*       
 <li>BA Player 동시실행 개선</li>        
 
-## **$\textcolor{dodgerblue}{\textsf{Version 2.1.0 - Sep 25, 2020}}$**      
+## **Version 2.1.0 - Sep 25, 2020**    
 
 ### *신규 기능*       
 <li>[Web] HTTP Request 액티비티 추가</li>      
