@@ -17,7 +17,9 @@
 - [Diagrma] 로드 이후 Loop 사이즈 조절이 불가한 문제 해결
 - [Diagrma] Find 기능에서 Loop 액티비티는 못 찾는 문제 수정  
 - [log]  engine Exception 발생시 log창에 출력하도록 수정
+- [Taskconverter] 여러개의 Task를 동시에 컨버터 할 경우 Code, Packages, image가 중복되는 문제 해결
 - [기타] 캡쳐 이미지 tmp 파일이 남는 문제 해결
+
 
 
 
