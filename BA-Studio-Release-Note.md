@@ -1,6 +1,6 @@
 # **Release History of BA-Studio**
 
-## **$\textcolor{dodgerblue}{\textsf{Version 2.3.1 - Aug 07, 2023}}$**  
+## **Version 2.3.1 - Aug 07, 2023**  
 ### *변경*
 - [Property Window] Decision 액티비티의 경우 프로퍼티 폼 더블클릭으로 안뜨도록 변경
 - [Property Window] taskname, filename 설명 추가
@@ -9,7 +9,7 @@
 - [Diagram] Highlighter 부분 선 연결 안되도록 변경
 - [Connector] Connecter 메뉴 클릭 후 발생하는 일부 버그 수정
 
-## **$\textcolor{dodgerblue}{\textsf{Version 2.3.0 - Jun 09, 2023}}$**  
+## **Version 2.3.0 - Jun 09, 2023**  
 ### *신규*
 - 시작페이지 생성 : 신규 파일, 파일 오픈, 신규 프로젝트, 프로젝트 오픈을 선택할 수 있는 시작 페이지 생성
 - [debug] 폰트 및 폰트 사이즈 변경, 창 크기 변경, 속도 향상을 위해 컨트롤 변경   
@@ -39,7 +39,7 @@
 
 <br/>   
 
-## **$\textcolor{dodgerblue}{\textsf{Version 2.2.0 - Sep 30, 2022}}$**     
+## **Version 2.2.0 - Sep 30, 2022**     
 ### *Diagram 변경사항*
 - Loop : Loop의 왼쪽이나, 오른쪽에 다른 Item을 놓고(왼쪽 상단을 잡고 Drag) 움지기면 분리되거나 늘어나는 현상 패치
 - Loop : LoopItem 깨지는 버그 수정
@@ -83,7 +83,7 @@
 <br>
 <br>
 
-## **$\textcolor{dodgerblue}{\textsf{Version 2.1.6 - Jan 04, 2022}}$**  
+## **Version 2.1.6 - Jan 04, 2022**  
 ### *Diagram*
 - Decision  : no 선 연결이 안되어있으면 error 발생이 아닌 무한루프에 빠지는 버그 수정
 - Decision : if문 생성 후 "yes"문만 생성 후 connector validation 사용 시 에러 발생 수정
@@ -105,20 +105,20 @@
 <br>
 <br>
 
-## **$\textcolor{dodgerblue}{\textsf{Version 2.1.5 - Jun 16, 2021}}$**  
+## **Version 2.1.5 - Jun 16, 2021**  
 *v2.1.5 BA-Studio는 변경사항 없이, 엔진과 BA-Assit가 변경되었습니다.*
 
 <br>
 <br>
 
-## **$\textcolor{dodgerblue}{\textsf{Version 2.1.4 - May 14, 2021}}$**  
+## **Version 2.1.4 - May 14, 2021**  
 ### *Program*
 <li> Find : like 연산자 추가</li>
 
 <br>
 <br>   
 
-## **$\textcolor{dodgerblue}{\textsf{Version 2.1.3 - Jun 16, 2021}}$**  
+## **Version 2.1.3 - Jun 16, 2021**  
 ### *Diagram*   
 <li>Connector Validator 추가 - Document 빈화면에서 우클릭 후 Connector Validator 클릭 => 연결되지 않을 경우 붉은 점선으로 표시됨</li>
           <li>Start와 연결된 Item을 변경할 경우 비정상 실행되는 오류 패치 </li>   
@@ -131,7 +131,7 @@
 <br>
 <br>   
 
-## **$\textcolor{dodgerblue}{\textsf{Version 2.1.2 - Jan 14, 2021}}$**   
+## **Version 2.1.2 - Jan 14, 2021**   
 ### *Program*   
 <li>Toolbox에 Activity 즐겨찾기 기능 추가</li>
           <li>이미지 캡쳐모듈 추가</li>
@@ -139,13 +139,13 @@
 <br>
 <br>   
 
-## **$\textcolor{dodgerblue}{\textsf{Version 2.1.1 - Nov 5, 2020}}$**   
+## **Version 2.1.1 - Nov 5, 2020**   
 *v2.1.1 BA-Studio는 변경사항 없이, 엔진만 변경되었습니다.*   
 
 <br>
 <br>    
 
-## **$\textcolor{dodgerblue}{\textsf{Version 2.1.0 - Sep 25, 2020}}$**   
+## **Version 2.1.0 - Sep 25, 2020**   
 ### *Diagram*    
 <li>Diagram Item 생성위치 자동조정 로직 개선 </li>    
 
