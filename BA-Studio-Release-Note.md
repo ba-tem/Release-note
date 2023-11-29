@@ -1,5 +1,21 @@
 # **Release History of BA-Studio**
 
+## **Version 2.4.1 - Nov 28, 2023**   
+### *신규*  
+ - [Web] OpenBrowser 비밀 번호 저장 팝업 비활성화
+ - [Variables] 기존 R변수를 삭제하고 Variables창에 선언한 이름 그대로 변수를 사용할 수 있게 변경
+
+
+### *변경*  
+ - [Export] Project, fp Export 기능 중 덮어쓰기 기능 보완
+ - [MultiThread] 선으로 연결하는 경우 연결 기능 보완
+ - [Show Predefine ] 탭이 활성화가 버그 수정
+ - [MultiThread ] 스레드 동작 중 Loop, Decision 및 관련 액티비티가 기능 오류 패치
+ - [MultiThread Validation] Predefine의 경로가 상대경로일 경우 발생되는 오류 수정
+ - [Loop, MultiThread] 루프나 멀티스레드 액티비티만 있을 경우 발생하는 저장 오류 수정
+ - [Loop, MultiThread] 루프나 멀티스레드 액티브, 디액티브 액샌 오류 수정
+ - [메뉴] SimpleConnector, Pointer 선택시 발생하는 오류 수정
+
 ## **Version 2.4.0 - Sep 26, 2023** 
 ### *신규*
 - [MultiThread] 멀티스레드 기능 추가 , 전용 액티비티  
