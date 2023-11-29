@@ -1,5 +1,24 @@
 # **Release History of RPA-Engine**   
 
+## **Version 2.4.0 - Nov 28, 2023**   
+### *신규*  
+ - [Web] ChromeAttach 액티비티 추가 (디버그모드의 크롬 브라우저를 객체로 가져와 사용하는 액티비티)
+ - [Web] MouseHover 액티비티 추가 (웹 엘리먼트에 마우스를 호버하는 액티비티)
+ - [Web] MoveMouse 액티비티 추가 (웹 특정 좌표에 마우스를 이동하는 액티비티)
+ - [Web] GetCoordinate 액티비티 추가 (마우스의 좌표를 반환하는 액티비티)
+ - [Excel] RenameSheet 액티비티 추가 (시트 이름을 변경하는 액티비티)
+ - [Excel] DeleteSheet 액티비티 추가 (시트를 삭제하는 액티비티)
+ - [Excel] GetCellValue 액티비티 returnAsText 프로퍼티 추가 (텍스트 형태로 반환 지정)
+ - [Excel] GetRangeAsCollection 액티비티 returnAsText 프로퍼티 추가 (텍스트 형태로 반환 지정)
+ - [Excel] GetWorksheetAsCollection 액티비티 returnAsText 프로퍼티 추가 (텍스트 형태로 반환 지정)
+ - [Excel] GetWorksheetAsDictionary 액티비티 returnAsText 프로퍼티 추가 (텍스트 형태로 반환 지정)
+ - PyMuPDF 버전 업데이트 => 1.23.3
+ - pytimekr 설치
+
+### *변경*  
+ - [Excel] CloseWorkbook 객채를 사용하여 닫는 경우 발생하는 오류 수정
+ - [Excel] GetWorkSheetAsCollection액티비티 row가 하나일 경우 문자열을 리스트로 반환하는 오류 수정
+
 ## **Version 2.4.0 - Sep 26, 2023** 
 ### *신규*
 - [Common] BreakThread 액티비티 추가
