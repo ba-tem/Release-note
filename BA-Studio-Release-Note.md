@@ -4,6 +4,7 @@
 ### *신규*  
  - [Web] OpenBrowser 비밀 번호 저장 팝업 비활성화
  - [Variables] 기존 R변수를 삭제하고 Variables창에 선언한 이름 그대로 변수를 사용할 수 있게 변경
+ - [Settings] MultiThread Validation 활성화/ 비활성화 옵션 추가
 
 
 ### *변경*  
