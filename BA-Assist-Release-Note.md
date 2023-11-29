@@ -1,5 +1,10 @@
 # **Release History of BA-Assist**   
 
+## **Version 2.4.1 - Nov 28, 2023**   
+### *변경*   
+ - [Trigger] 트리거를 추가할 경우 새로 추가할 트리거에 기존의 트리거 값이 남아있는 오류 수정  
+ - [Schedule] 스케쥴이 disable인 경우에도 캘린더에 예정일이 표기되는 오류 수정
+
 ## **Version 2.4.0 - Sep 26, 2023** 
 ### *신규*  
 - [Setting] ScreenSaver off 기능 활성화
