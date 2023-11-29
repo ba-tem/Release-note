@@ -6,7 +6,7 @@
 
 
     
-[![BA-Assist Release note](https://img.shields.io/badge/download-BA--Assist-brightgreen)](https://download.batem.com/ba_assist.html)    
+[![BA-Assist Release note](https://img.shields.io/badge/download-BA--Assist-brightgreen)](https://download.batem.com/#/assist)    
 &nbsp;&nbsp;&nbsp;**-[ BA-Assist Release note ](BA-Assist-Release-Note.md)**     
 
 
