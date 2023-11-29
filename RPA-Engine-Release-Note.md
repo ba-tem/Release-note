@@ -1,6 +1,6 @@
 # **Release History of RPA-Engine**   
 
-## **Version 2.4.0 - Nov 28, 2023**   
+## **Version 2.4.1 - Nov 28, 2023**   
 ### *신규*  
  - [Web] ChromeAttach 액티비티 추가 (디버그모드의 크롬 브라우저를 객체로 가져와 사용하는 액티비티)
  - [Web] MouseHover 액티비티 추가 (웹 엘리먼트에 마우스를 호버하는 액티비티)
