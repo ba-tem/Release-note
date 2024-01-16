@@ -1,5 +1,11 @@
 # **Release History of BA-Studio**
 
+## **Version 2.4.2 - Jan 16, 2024**   
+### *변경*  
+ - [TaskConverter] 구 버전에서 컨버팅하는 경우 정상적으로 파일이 안열리는 오류 수정
+ - [Resource Variables] Resource 변수 초기화 문제 수  
+ - [ScreenCapture] 원격 환경에서 selector 사용 및 capture 안되는 오류 수정  
+
 ## **Version 2.4.1 - Nov 28, 2023**   
 ### *신규*  
  - [Web] OpenBrowser 비밀 번호 저장 팝업 비활성화
