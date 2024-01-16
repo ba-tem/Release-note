@@ -1,4 +1,13 @@
 # **Release History of BA-Assist**   
+## **Version 2.4.2 - Jan 16, 2024**   
+### *신규*   
+ - [MultiProcess] 동시에 여려 개의 Task를 실행할 수 있는 기능  
+ - [Setting] Rollback - Backup한 Setting 파일을 복원하는 기능 추가
+ - [Setting] 변경 세팅 내용 확인하도록 변경점 체크 기능 추가
+
+### *변경* 
+ - [Schedule] Export, Import - Temp 폴더 삭제
+ - [Setting] Backup - Temp 폴더 삭제
 
 ## **Version 2.4.1 - Nov 28, 2023**   
 ### *변경*   
