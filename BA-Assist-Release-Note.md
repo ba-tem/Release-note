@@ -1,4 +1,19 @@
 # **Release History of BA-Assist**   
+## **Version 2.5.0 - Mar 29, 2024**   
+### *신규*   
+ - Engine 분리
+ - Sequential 기능 추가 - 태스크 연속 실행 기능
+ - Task Option 기능 추가 - 태스크별 세팅 기능, 태스크 별 Engine 버전 선택 기능 포함, timeout 기능
+ - [Logs] Duration(실행시간) 표기 추가
+ - [Logs] 날짜 필터 초기화 버튼 생성
+ - [Logs] 날짜별 폴더를 만들고 시-분-초_태스크파일이름.log 파일로 log 파일 세분화
+ - DB Schema update - DB 구조가 변경되었을 경우 DB 구조를 업데이트 해주는 기능
+
+### *변경* 
+ - [Logs] 날짜 필터가 적용 안되는 오류 수정
+ - [About] Version 정보가 최신화되지 않는 오류 수정
+
+
 ## **Version 2.4.2 - Jan 16, 2024**   
 ### *신규*   
  - [MultiProcess] 동시에 여려 개의 Task를 실행할 수 있는 기능  
