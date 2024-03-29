@@ -1,4 +1,31 @@
 # **Release History of BA-Studio**
+## **Version 2.5.0 - Mar 29, 2024**
+### *신규*   
+ - Custom Activity 생성 기능 추가 - 사용자 정의 액티비티를 만들고 관리할 수 있는 기능   
+ - Debugging 기능 추가 - 디버깅 실행, 중단점 설정, 단계별 실행, 변수 확인 등 프로세스 디버깅 기능   
+ - Engine 분리   
+ - 값 반환 액티비티 및 Message Box 액티비티 고정 이름 설정(prefix)   
+ - 저장 버튼을 누를 경우 하단에 저장이 완료되었다는 Alert 창 생성   
+ - ItemColor - 프로퍼티창에서도 설정할 수 있도록 기능 추가   
+ - Logs 창, Code창, Debug Console창 - 검색 기능 추가   
+ - Select Info - Win32, WEB selector가 수집한 윈도우 객체 또는 엘리먼트 객체의 정보를 표시하는 기능 추가   
+ - Settings - Engine Version 선택 기능 추가   
+ - WinPicker - Name, ClassName, AutomationID, Depth, Index 등 정보 표시 추가   
+ - WebPicker - MousePosition, ElementSize, frame정보, TagName, Attributes 등 정보 표시 추가   
+ - 대기화면 - 프로그램을 열고 태스크를 여는 대기시간에 splashFrom 추가
+
+### *변경*
+ - Project창 > Run Task - 무조건 프로젝트가 실행되는 오류 수정
+ - [Toolbox]Project에서 Predefined Process 액티비티 비활성화 처리
+ - [Diagram] 시작 액티비티, 끝 액티비티가 없는 꺽여있는 연결선 또는 꺽여있는 연결선만 단독으로 복사할 경우 붙여넣을 때 발생되는 오류 수정
+ - [Project] 2.3.0 이하 버전 Task를 Import 하지 못하도록 수정
+ - Logs, Debug - Logging 메모리 관리 - 메모리 중첩 방지(메모리 관리 효율화)
+ - [Property] Property 설명 추가 (Predefined Process, MultiThread 액티비티)
+ - [Diagram] Start Shape에 여러개의 액티비티가 추가되는 오류 수정
+ - StartPage가 실행 중일 경우 다시 프로그램을 실행 시킬때 발생 하는 오류 수정
+ - [Code] Code창에 코드 작성 후 다이어그램을 추가하는 경우 작성한 Code가 사라지는 오류 수정
+ - [Variables] 프로젝트를 열고 새로운 태스크 선택후 프로젝트로 전환하면 변수가 복사되는 오류 수정
+ - [Variables] Global 변수의 key값을 변경한 경우 변경 전 변수와 변경 후 변수 2개가 생기는 오류 수정
 
 ## **Version 2.4.2 - Jan 16, 2024**   
 ### *변경*  
