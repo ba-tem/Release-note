@@ -1,5 +1,57 @@
 # **Release History of RPA-Engine**   
+## **Version 2.5.0 - Mar 29, 2024**   
+### *신규*   
+- [Excel] GetRangeAsCollection - path, password, close 프로퍼티 추가로 단일 사용이 가능하도록 기능 추가
+- [Excel] GetWorkSheetAsDictionary - close 프로퍼티 추가
+- [Excel] GetWorkSheetRowAsDictionary 추가 -  Row를 기준으로 맵핑하여 딕셔너리 반환하는 액티비티
+- [Excel] CreateInstance - retry 프로퍼티 추가   
+- [Excel] Attach - retry 프로퍼티 추가   
+- [Excel] Exit - timesleep 프로퍼티 추가  
+- [Excel] SetRangeFormat - mergeAlign 프로퍼티 추가 (병합 후 정렬 설정)  
+- [Excel] ExecuteExcelMacro 추가 - 엑셀 매크로 실행 액티비티
+- [Win32] InputBox - 디자인 변경, TopMost, SetFocus 추가
+- [Win32] MessageBox- 텍스트 변경, align 프로퍼티 추가   
+- [Win32] ClickAutomation - 새로운 컨트롤 선택 방식 추가, timeout 프로퍼티, fallback 프로퍼티 추가   
+- [Win32] DoubleClickAutomation - 새로운 컨트롤 선택 방식 추가, timeout 프로퍼티, fallback 프로퍼티 추가   
+- [Win32] SetTextAutomation - 새로운 컨트롤 선택 방식 추가, timeout 프로퍼티, clear 프로퍼티 추가   
+- [Win32] GetTextAutomation - 새로운 컨트롤 선택 방식 추가, timeout 프로퍼티 추가
+- [Win32] SelectAutomation - 새로운 컨트롤 선택 방식 추가, timeout 프로퍼티 추가
+- [Win32] SetActiveAutomation -새로운 컨트롤 선택 방식 추가, timeout 프로퍼티 추가
+- [Win32] MaximizeAutomation - 새로운 컨트롤 선택 방식 추가, timeout 프로퍼티 추가
+- [Win32] MinimizeAutomation - 새로운 컨트롤 선택 방식 추가, timeout 프로퍼티 추가
+- [Win32] CloseAutomation - 새로운 컨트롤 선택 방식 추가, timeout 프로퍼티 추가
+- [Win32] ControlExists 추가 - 특정 윈도우 컨트롤이 존재하는지 여부를 반환하는 액티비티
+- [Email] Send Mail (SMTP) - IMAP 정보 프로퍼티 추가 (보낸 메일함 저장 기능)
+- [Email] GetMail(Outlook) 추가 - 아웃룩의 특정 메일에 대한 정보를 가져오는 액티비티
+- [Email] GetMail(POP3) 추가 - POP3를 이용해 특정 메일에 대한 정보를 가져오는 액티비티
+- [Web] Maximize - activate 프로퍼티 추가 (창 활성화 옵션 추가)
+- [Web] SwitchBrowserWindow - activate 프로퍼티 추가 (창 활성화 옵션 추가)
+- [Web] WaitAlert 추가 - 자바스크립 알람을 기다리는 액티비티
+- [Web] WaitDisappearAlert 추가 - 자바스크립 알람의 종료를 기다리는 액티비티
+- [Web] GetAlertText 추가 - 자바스크립 알람의 메시지를 반환하는 액티비티
+- [Web] ClickAlert - wait 프로퍼티 추가 (알람창이 나타날때까지 기다리는 옵션)
+- [Web] SwitchFrame - frameName 프로퍼티 추가 (frame의 id 또는 name 속성으로 전환 가능하도록 기능 추가 / 우선순위 : switchDefault > frameName > nth_frame)
+- [Web] MouseMove - retry 프로퍼티 추가 (재시도 횟수 지정)
+- [Web] GetCoordinate - retry 프로퍼티 추가 및 timesleep 프로퍼티 삭제
+- [Web] GetCheckboxValue 추가 - Checkbox의 값을 반환하는 액티비티
+- [Web] SetCheckboxValue 추가 - Checkbox의 값을 지정하는 액티비티
+- [Web] SelectAll 추가 - 특정 웹 엘리먼트 전체를 담은 리스트를 반환하는 액티비티
+- [Web] SSHCommand 추가 - ssh를 이용해 명령어를 사용하는 액티비티
+- [Common] SetScreenResolution 추가 - 화면 해상도를 변경하는 액티비티
+- [Common] WaitForProcessToDisappear 추가 - 특정 프로세스가 종료할 때까지 대기하는 액티비티
+- [AI] TesseractOCRImageToText 액티비티 그룹 이동 (기존 IMAGE 그룹-> AI 그룹)
+- [AI] ChatWithChatGPT 추가 - ChatGPT api 사용 액티비티
 
+### *변경* 
+- [Common] 마우스가 화면 모서리에 있을 경우 발생하는 FAILSAFE 오류 처리
+- [Excel] 엑셀에서 제공하는 마지막 컬럼까지 사용할 수 있도록 변경
+- [Excel] Exit - Excel Process 종료되는 것을 기다리도록 변경 
+- [Excel] GetWorkSheetAsCollection - close True의 경우 워크북이 하나만 있을 경우 인스턴스까지 종료하도록 변경
+- [Web] Select Dropbox Item - params 프로퍼트로 들어온 값의 frame을 구분 못하는 오류 처리
+- [Web] paramsType이 CSS를 제외하고 ,(콤마)도 params에서 간접적으로 사용할 수 있도록 수정 a = 'a, li'  {{a}} 
+- [BUILTIN] Loop액티비티에서 set 자료형과 dictionary 자료형도 Item(), Index() 메소드를 사용할 수 있도록 변경
+- [Win32] Execute - param 프로퍼티에 ',"(따옴표, 쌍따옴표)를 사용하면 공백이 포함된 파라미터도 사용할 수 있도록 변경
+  
 ## **Version 2.4.1 - Nov 28, 2023**   
 ### *신규*  
  - [Web] ChromeAttach 액티비티 추가 (디버그모드의 크롬 브라우저를 객체로 가져와 사용하는 액티비티)
