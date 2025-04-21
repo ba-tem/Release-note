@@ -1,4 +1,39 @@
 # **Release History of BA-Studio**
+## **Version 2.6.1.5 - Apr 21, 2025** 
+### *변경* 
+ - [WEB] SendKeys 액티비티 clear옵션에 Ctrl + a -> del 기능 추가
+ - 라이브러리, 서브태스크 액티비티를 끌어다 놓는 경우 output변수 value 컬럼 초기화 및 value 컬럼에서 편집 불가능하도록 수정
+ - Input, Output 변수 사용 오류 수정 - output 변수가 덮어 쓰여지는 문제 수정 / input, output 변수가 제대로 값을 주고 받을 수 없는 문제 수정
+ - TryExcept 액티비티 Exception에서 오류나는 경우에도 Finally 이후로 실행되는 문제 수정
+ - DataFrameFilter 액티비티 복사 붙여넣기 할때 Filter 정보 복사 안되는 오류 수정
+ - Code창의 함수 실행시 변수 값 할당 오류나는 문제 수정
+ - Code창에서 매개변수가 없는 함수를 작성할 경우 오류 나는 문제 수정
+
+## **Version 2.6.1.4 - Apr 11, 2025**  
+### *신규*  
+ - [WEB] EdgeAttach 액티비티 생성 - 디버깅 모드로 실행된 Edge 브라우저를 객체로 가져오는 액티비티
+ - [WEB] ExecuteScript 액티비티 script프로퍼티에 코드 에디터 추가 - ExecuteScript 액티비티에서 자바스크립 작성을 위한 코드 에디터 추가
+
+### *변경*  
+ - 전역 변수 사용 방식 변경 - 전역 변수는 「g.변수명」 형태로 사용 (Code 창, 프로퍼티 창)
+ - 셀렉터 관리 범위 변경 - 기존 프로젝트 전역 관리에서 태스크 단위 관리로 범위 축소
+ - 셀렉터 편집기 결과 문자열 수정 기능 추가  - 미리보기 창에서 결과 문자열 직접 수정 가능
+ - 예외처리 우선 순위 변경 - TryExcept 액티비티의 Try 블록 내에서 예외처리 우선순위 변경 ,   변경 후 우선순위: 액티비티 Exception[jump, exec, call] > TryExcept Exception > OnError 액티비티
+ - OpenBrowser 액티비티에서 Chrome 브라우저 사용 시, 디버깅 모드로 실행하도록 변경 (ChromeAttach 액티비티 사용 가능)
+ - 액티비티의 이름(Name) 필드에 Ctrl + K 단축키 기능 추가
+ - WEB / 엘리먼트를 못찾는 경우 NoSuchElement 오류 처리
+ - OnError 액티비티가 에러 없이 실행되는 경우 태스크가 종료되지 않던 문제 수정
+ - WEB 셀렉터의 type 속성이 따옴표(") 처리 없이 값을 반환하던 문제 수정
+ - 테이블 데이터 미리보기 시 로딩 창이 표시되지 않던 문제 수정
+ - 테이블 데이터 미리보기에서 빈 값을 조회 시 무한 대기 상태가 되던 문제 수정
+ - 라이브러리 태스크에서 I/O 변수를 지정하지 못하던 문제 수정
+ - 중첩 TryExcept에서 Try분기 외 부분에서 에러나는 경우 그대로 종료하는 문제 수정
+ - Loop 안에서 모든 변수가 초기화 되는 문제 수정 및 Input, Output 컨버팅 오류 문제 수정
+ - Input,Output 창에서 password, date 타입 변수를 지정하는 경우 오류 나는 문제 수정
+ - SelectorEditor에서 WEB 셀렉터 유효성 검사 누를 경우 NativeHost가 없을 경우 창이 비활성화되는 문제 수정
+ - 2개 이상 중첩된 서브태스크 동작 시 Output 변수의 값이 변경이 안되는 문제 수정
+ - 프로젝트 내부에서 라이브러리 중첩 라이브러리 태스크 사용시 input, output 변수를 최신화하지 못하는 문제 수정  
+
 ## **Version 2.5.0 - Mar 29, 2024**
 ### *신규*   
  - Custom Activity 생성 기능 추가 - 사용자 정의 액티비티를 만들고 관리할 수 있는 기능   
