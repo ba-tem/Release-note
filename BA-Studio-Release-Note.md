@@ -1,4 +1,194 @@
 # **Release History of BA-Studio**  
+## **Version 2.6.3.1 - Mar 26, 2026**  
+### *신규*   
+ - [EXCEL] GetRangeAsDataFrame : 지정한 범위를 DataFrame으로 반환하는 신규 액티비티 추가
+ - [EXCEL] RemoveDuplicates : 중복 데이터를 제거하는 신규 액티비티 추가
+ - [WIN32] ShowAutomation : 자동화 창 표시용 신규 액티비티 추가
+ - [WIN32] HideAutomation : 자동화 창 숨김용 신규 액티비티 추가
+ - [WEB] ClickText : 텍스트 클릭용 신규 액티비티 추가
+ - 액티비티 및 프로퍼티 기능 확장 :  
+    * EXCEL / GetCellValue, SetCellValue : 셀 위치 지정 방식인 cell 프로퍼티 추가
+    * EXCEL / GetWorkSheetAsDataFrame : returnAsText(내부 데이터 텍스트 처리) 옵션 추가
+    * WEB / OpenBrowser : 디버깅 포트 사용 여부 프로퍼티 추가
+    * WIN32 / 컨트롤 사용하는 액티비티 : 모달 창 우회용 ClosePopups, forceEnableMain 프로퍼티 추가
+    * 빌트인 액티비티를 제외한 모든 액티비티에 timesleep 속성 적용
+ - 신규 실행 및 편의 기능 추가 : 
+    * 스튜디오 Viewer(저장 불가) 모드 생성
+    * BA-Recorder 기능 추가
+    * 프로젝트, 라이브러리, 태스크 백업 기능 생성 및 Settings 옵션 추가
+ -  셀렉터 및 실행 환경 기능 강화 :  
+    * Selector 선택 시 LGDisplayExtension 검사 및 종료 로직 추가
+
+### *변경*  
+ - 프로퍼티 및 UI 사용성 개선 :  
+    * 프로퍼티 창 개선 그룹 생성 및 디자인 변경
+    * 사용자 혼선을 방지하기 위해 fileProperties와 Properties에 따라 Input/Output 버튼 캡션 및 배경색 분기 처리
+    * UI에서 표시하는 메시지 박스 TopMost 처리 (셀렉터 편집기, 테이블 미리보기 창)
+    * 셀렉터 편집기 정보 표시창에 스크롤 적용
+ - 코드 편집기 및 편집 동작 개선 :  
+    * Python 3.11 구문 지원을 추가 (match ~ case 문 지원)
+    * 코드 창, 코드 팝업 창 인텔리센스 개선(DataFrame)
+    * 코드 창, 코드 팝업 창 Undo/Redo 시 커서 위치 고정 및 동작 개선
+    * Error List 동작 개선 (수정된 에러 삭제 및 신규 에러 추가 최신화 동작 개선)
+ - 데이터 처리 및 액티비티 기능 개선 : 
+    * DATA / DataFrameFilter : filter 조건에 변수 사용 가능하도록 개선
+    * 셀렉터 복원 과정에서 오류 발생 시 "Control not found" 대신 실제 오류 내용 반환하도록 개선
+ - 설치 및 실행 환경 개선 : 
+    * 설치 파일에 C++ 재배포 패키지 설치 추가
+ - Code, Flow 창 및 단축키 관련 문제 수정 :  
+    * Flow 창에서 단축키로 Connector, Diagram 생성 가능하던 문제 수정
+    * 라이브러리(태스크) 프로퍼티창 및 입/출력 설정 패널에서 Ctrl + K 비정상 동작 문제 수정
+    * 변수명이 함수명에 포함된 문자열일 경우 오류가 발생하던 문제 수정
+ - Find Item 및 탐색 동작 안정화 : 
+    * 접힘 상태에서 Find Item 수행 시, 대상 아이템이 접힌 부모 내부에 있을 경우 부모를 재귀적으로 Expand하여 대상이 보이도록 수정
+    * 탐색 범위가 Current Document이면서 태스크에 Predefined Process 액티비티가 있는 경우 오류나는 문제 수정
+ - 변수 및 프로퍼티 처리 문제 수정 :  
+    * Code 창 또는 Process 액티비티에서 변수 할당 문제 수정
+    * 딕셔너리 키(G 전역변수 포함) 이름의 변수 생성 및 수정 문제 수정
+    * script 속성이 표시되면 안 되는 액티비티에서 script가 표시되던 문제 수정
+    * 프로퍼티 속성 설명이 없거나 보이지 않던 문제 수정
+    * InPut/OutPut 변수 로드 시 resource가 없을 경우 오류 발생 문제 수정
+    * 라이브러리 태스크 미리보기에서 내부 predefined Process 액티비티의 InPut/OutPut 변수창이 열리고 수정이 가능한 문제 수정
+ - 복사/붙여넣기 및 편집 동작 문제 수정 :  
+    * 다른 태스크 간 Activity 복사/붙여넣기 중 name 중복 체크 오류 수정
+ - 데이터 처리 및 결과 반영 문제 수정 :  
+    * DATA / DataFrameFilter 결과가 원복되던 문제 수정
+ - 파일 및 리소스 관리 문제 수정 : 
+    * 프로젝트 생성 시 프로젝트명의 대소문자를 구분하지 못해 동일 경로에 대한 중복 체크가 되지 않던 문제를 수정했습니다.
+    * temp 경로 파일 누수 문제 수정
+ - 멀티스레드 및 실행 흐름 문제 수정 :  
+    * 멀티스레드가 동작하지 않던 문제 수정
+    * 멀티스레드 유효성 검사시 오류가 나는 문제 및 검사 결과 액티비티 이동이 안되는 문제 수정
+    * 루프 내부에서 오류 발생 후 예외 처리로 루프를 빠져나간 경우, 루프 탈출 처리가 정상 동작하지 않아 흐름이 깨지던 문제 수정
+    * COMMON / UserException 액티비티의 enterOnError 프로퍼티가 정상적으로 동작하지 않던 문제 수정
+ - UI 자동화 및 좌표 처리 문제 수정 : 
+    * WIN32 / PickScreenText, ClickPickText 미리보기에서 ' 포함 시 미리보기가 동작하지 않던 문제를 수정
+    * WIN32 / PickScreenText 미리보기에서 좌표가 음수여도 처리되도록 수정
+    * WEB / 클릭 관련 액티비티 anchor 기준이 실제 엘리먼트와 상이하던 문제 수정
+ - 디버그 BreakPoint 처리 문제 수정 :  
+    * BreakPoint를 가져오지 못하는 문제 수정
+    * BreakPoint를 삭제/이동이 안되는 문제 수정
+
+## **Version 2.6.3.0 - Jan 14, 2026**  
+### *신규*   
+ - [BuiltIn] Group : 개별 액티비티들을 기능적 또는 의미적 기준에 따라 분류하기 위한 컨테이너 액티비티
+ - [WIN32] GetRegistryValue : Windows 레지스트리 값 조회
+ - [WIN32] SetRegistryValue : Windows 레지스트리 값 추가 및 수정
+ - [EXCEL] CopySheetToWorkBook : Excel A 파일의 시트를 B 파일로 복사하는 신규 액티비티 추가
+ - 액티비티 프로퍼티 기능 확장 : 
+    * WIN32 / TypeText : selector, verify 프로퍼티 추가
+    * WIN32 / TypeKeys : selector 프로퍼티 추가
+    * WEB / HttpRequest : SSL 인증서 검증 사용 여부 설정용 verify 옵션 추가
+    * EXCEL / GetWorksheetAsDataFrame 액티비티 path, password, writeResPassword 옵션 추가
+    * 클릭 계열 액티비티에 combinationkey 프로퍼티 추가 (Ctrl, Shift 등 키 조합 지정 가능)
+    * WIN32 셀렉터 사용 액티비티에 searchMode 프로퍼티 추가 (탐색 방식 지정 가능)
+ - 액티비티 예외 처리 기능 확장 :
+    * Activity Exception : 오류 발생 시 다음 Activity로 자동 이동하는 Next 옵션 추가
+ - BuiltIn 액티비티 그룹화 기능 확장 :
+    * BuiltIn 액티비티 감싸기(Wrapping) 기능 지원
+    * BuiltIn 액티비티 Collapse / Expand 기능 지원
+ - 코드 편집기 사용성 개선
+    * Code 창에서 Ctrl + [-, +, 0] 단축키를 통한 Zoom In / Out / Reset 기능 추가
+ - 셀렉터 및 UI 편의 기능 강화
+    * SelectorEditor : 노드 목록 간소화 기능 추가
+
+### *변경*  
+ - 비정형 텍스트 및 데이터 추출 안정성 개선 :
+   * PickScreenText : Top, Left 기준 오름차순 정렬 적용
+   * PickScreenText, PickTableData 미리보기 : '/' 문자가 '\/'로 표시되던 문제 개선
+   * ClickPickText : 텍스트 매칭 로직 개선 (와일드카드 사용 여부에 따른 처리 분리)
+   * 콤보박스 컨트롤, 라벨 컨트롤 텍스트 읽기 기능 개선
+   * 그리드 및 화면 캡처 처리 개선
+ - 변수(Variables) 및 스코프 처리 개선 :  
+   * 스코프가 다른 경우 동일 변수명 사용 가능하도록 개선
+   * DataFrame 타입 변수 생성 시 value 영역에 key 값 노출되던 문제 수정
+   * 입출력 변수 Date 타입 변수의 날짜 형식 처리 개선
+ - 라이브러리 Task 미리보기 사용성 개선
+   * Properties / Variables 창: Disabled → ReadOnly 변경 (복사 가능)
+   * Exception 및 버튼 기능 비활성화 처리
+ - Find Item 기능 안정화
+    * 저장되지 않은 항목이 검색 대상에 포함되던 문제 수정
+    * 중복 검색 결과 제거
+    * 결과 바로가기 - 인덱스 증가에 따른 좌표 누적 오차 문제 해결
+ - 코드 편집기 동작 개선
+    * Ctrl+K로 변수 등록 시 작성 중 코드 초기화되던 문제 수정(기존 코드 유지 + 변수 코드 정상 반영)
+ - 기타 UI 및 동작 개선
+    * Default Activity Settings : Tool Box 검색 결과가 설정 화면에 영향을 주던 오류 수정
+    * Default Activity Settings : 전체 항목 선택 시 Select All 체크 표시 오류 수정
+    * White 스킨에서 비활성화 Activity 구분 어려운 문제 개선
+    * 비활성화 상태 시 시각적 구분 강화
+    * 액티비티 로드 성능 최적화 진행
+    * Undo/Redo: Flow/Code/Variables 화면 실행·실행취소 스택 단일화(일관성 개선)
+ - 저장 및 로드 로직 전반 개선
+    * 프로젝트 / 태스크 / 라이브러리 / 변수 저장 로직 최적화
+    * 포커스된 입력창 변경사항 저장 누락 문제 수정
+    * 전체 저장 시 변수 저장 오류 수정
+    * 저장 실패 시 재시도 로직 및 로컬 로그 파일 작성 기능 추가
+ - 디버깅 및 실행 흐름 안정화
+    * 브레이크포인트 추가 시 발생하던 오류 수정
+    * 반복 조건 종료 후 루프 내부 및 비활성 Activity에서 중단점 동작 문제 수정
+    * "여기서부터 실행" 디버깅 기능 미동작 문제 수정
+ - 로그 출력 개선
+    * 로그 레벨별 출력 형식 개선
+    * 인덱스, 프로퍼티 출력 추가
+    * 불필요한 로그 제거
+ - 셀렉터 시스템 전면 개선
+    * WIN 셀렉터 하이라이트 무한 표시 방식으로 변경 (ESC로 종료, WEB은 기존 3초 표시 방식 유지)
+    * WIN, WEB 셀렉터 선택 중 ESC 키로 선택 취소 가능
+    * 선택 완료 후 노드에 의미 없는 값이 들어가던 문제 수정
+    * 셀렉터 정보에 개행 포함 시 엔진 오류 발생 문제 수정
+    * WIN32에서 Control로 모든 타입의 컨트롤 대체 가능하도록 확장
+ - 크롬, 엣지 확장 프로그램 버전 업데이트 (0.0.6)
+ - 열린 Task가 없는 경우 Properties, Variables 수정 가능하던 문제 수정
+ - 프로퍼티 입력 중 저장/실행 시 값이 반영되지 않던 문제 수정
+ - Win32 셀렉터 관련 액티비티 timeout 설정값이 무시되던 문제 수정
+ - Variables 패널 Date 타입 변수 value가 비어있을 경우 발생하던 오류 수정
+ - 디버깅 콘솔 및 셀렉터에서 g 변수 사용 불가 문제 수정
+ - Chrome, Edge 확장 프로그램 메시지 수신 로직 개선
+ - FPX Import 시 빈 Resource 폴더가 포함이 안되던 문제 수정
+ - [BuiltIn] TryExcept : Title 수정 시 Script 내용까지 변경되던 문제 수정
+ - [BuiltIn] MultiThread : break_on_error 옵션 미동작 문제 수정
+ - 액티비티 복사/붙여넣기 시 그룹 의존성 자동 입력 처리
+ - Tag: NoVar을 사용하여 Code창에서 입출력 변수를 선언/사용한 경우 출력 변수를 제대로 전달하지 못하던 문제 수정
+ - File Properties에 Description에 변수 생성 기능(Ctrl+K) 사용 가능한 문제 수정
+   
+## **Version 2.6.2.4 - Aug 29, 2025**  
+### *신규*   
+ - RPA 프로세스 상세 로그 출력 기능 추가 : CommonSettings에 config 항목을 추가하여 파이썬 내부 로그 출력 기능 제공
+ - 파이썬 패키지 추가 : keyboard 패키지 추가, beautifulsoup4 패키지 추가
+
+### *변경*  
+ - WEB 셀렉터 업데이트 및 개선 :
+   * RPA 프로세스가 실행한 Chrome, Edge 브라우저에서 WEB 셀렉터 사용 가능 (userData -> None 사용 시)
+   * WEB 선택 영역 이미지 캡처 기능 개선 (보다 정확한 위치 캡처)
+   * 엔진 실행 결과와 미리보기 결과가 동일하도록 동기화
+   * css-selector 기반으로 필요한 노드만 선택하도록 개선
+   * 브라우저 탭 메시징 유효성 검사 추가로 확장 프로그램이 강제 종료되지 않도록 개선
+   * 설정 화면의 Add On 탭에 버전 정보 표시 및 디자인 개선  
+ - 프로젝트 매니저 개편
+   * 프로젝트 업로드/다운로드 기능 분리
+   * 업로드 시 신규 프로젝트는 등록, 기존 프로젝트는 업데이트 되도록 개선
+   * 다운로드 시 기존 프로젝트는 정상적으로 종료한 후 덮어쓰기되도록 개선
+ - 액티비티 개선
+   * FILE / CreateDirectory: createAllDir 속성 추가로 전체 경로 내 모든 폴더 생성 가능
+   * SERVER / 필수 입력값 누락 시 명확한 오류 메시지 출력
+   * SERVER / GetQueueMessage: QueueName 누락 시 오류 발생하도록 개선
+ - 프로젝트 저장 기능 개선
+   * 프로젝트 생성 및 다른 이름으로 저장 시 마지막 저장 위치를 자동으로 기억하도록 개선
+ - 셀렉터: 파이썬 엔진이 없는 경우 오류 발생 문제 수정
+ - 파일 저장: 라이브러리 종료 후 신규 태스크 파일 저장이 되지 않던 문제 수정
+ - 프로젝트 업로드: 최신 버전이 9이상 안올라가는 문제 수정
+ - 액티비티 복사/붙여넣기: 특정 조건에서 복사된 액티비티 이름 중복 문제 수정
+ - 변수 사용: 변수가 없을 경우 변수명이 그대로 출력되던 문제 수정
+ - 입출력 변수: 하위 버전과 호환성 문제로 자동 변경 실패 문제 수정
+ - 입출력 변수: 입력 변수와 출력 변수 이름이 동일할 경우 유효성 검사 누락 문제 수정
+ - 라이브러리: 모든 태스크를 닫고 신규 태스크 생성 시 시작 버튼 비활성화 문제 수정
+ - VDI 환경 캡쳐: 물리 모니터가 없는 환경에서 이미지 캡처 기능이 작동하지 않던 문제 수정
+ - [WIN32] 클릭 액티비티: 컨트롤 높이 또는 너비가 0일 경우 ValueError 발생하도록 수정
+ - [COMMON] KillProcess: 설정한 이름이 포함된 모든 프로세스가 종료되는 문제 수정
+ - [EXCEL] Attach: 새로 연 엑셀 파일이 EXCEL.Default()로 참조되지 않는 문제 수정
+ - [WIN32] TypeText: clear 속성이 byClipboard가 True일 경우에만 동작하도록 수정, 글자 간 interval 추가로 안정성 개선  
+
 ## **Version 2.6.2.2 - Jul 16, 2025**  
 ### *신규*   
  - [AI] ReadCaptcha 액티비티 생성 - 이미지 캡챠 결과를 반환하는 액티비티, 정부24 및 대법원의 딥러닝 모델이 탑재
