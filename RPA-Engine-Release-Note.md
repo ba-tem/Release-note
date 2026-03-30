@@ -1,4 +1,19 @@
 # **Release History of RPA-Engine**   
+## **Version 2.6.3.1 - Mar 26, 2026**  
+### *신규*  
+- [EXCEL] GetRangeAsDataFrame : 지정한 범위를 DataFrame으로 반환하는 신규 액티비티 추가
+- [EXCEL] RemoveDuplicates : 중복 데이터를 제거하는 신규 액티비티 추가
+- [WIN32] ShowAutomation : 자동화 창 표시용 신규 액티비티 추가
+- [WIN32] HideAutomation : 자동화 창 숨김용 신규 액티비티 추가
+- [WEB] ClickText : 텍스트 클릭용 신규 액티비티 추가  
+
+### *변경* 
+- [EXCEL] GetCellValue, SetCellValue : 셀 위치 지정 방식인 cell 프로퍼티 추가
+- [EXCEL] GetWorkSheetAsDataFrame : returnAsText(내부 데이터 텍스트 처리) 옵션 추가
+- [WEB] OpenBrowser : 디버깅 포트 사용 여부 프로퍼티 추가
+- [WIN32] 컨트롤 사용하는 액티비티 : 모달 창 우회용 ClosePopups, forceEnableMain 프로퍼티 추가 
+- 빌트인 액티비티를 제외한 모든 액티비티에 timesleep 속성 적용  
+
 ## **Version 2.5.0 - Mar 29, 2024**   
 ### *신규*   
 - [Excel] GetRangeAsCollection - path, password, close 프로퍼티 추가로 단일 사용이 가능하도록 기능 추가
