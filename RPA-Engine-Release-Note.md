@@ -14,6 +14,39 @@
 - [WIN32] 컨트롤 사용하는 액티비티 : 모달 창 우회용 ClosePopups, forceEnableMain 프로퍼티 추가 
 - 빌트인 액티비티를 제외한 모든 액티비티에 timesleep 속성 적용  
 
+## **Version 2.6.3.0 - Jan 14, 2026**  
+### *신규*   
+ - [BuiltIn] Group : 개별 액티비티들을 기능적 또는 의미적 기준에 따라 분류하기 위한 컨테이너 액티비티
+ - [WIN32] GetRegistryValue : Windows 레지스트리 값 조회
+ - [WIN32] SetRegistryValue : Windows 레지스트리 값 추가 및 수정
+ - [EXCEL] CopySheetToWorkBook : Excel A 파일의 시트를 B 파일로 복사하는 신규 액티비티 추가
+ - 액티비티 프로퍼티 기능 확장 : 
+    * WIN32 / TypeText : selector, verify 프로퍼티 추가
+    * WIN32 / TypeKeys : selector 프로퍼티 추가
+    * WEB / HttpRequest : SSL 인증서 검증 사용 여부 설정용 verify 옵션 추가
+    * EXCEL / GetWorksheetAsDataFrame 액티비티 path, password, writeResPassword 옵션 추가
+    * 클릭 계열 액티비티에 combinationkey 프로퍼티 추가 (Ctrl, Shift 등 키 조합 지정 가능)
+    * WIN32 셀렉터 사용 액티비티에 searchMode 프로퍼티 추가 (탐색 방식 지정 가능)
+ - 액티비티 예외 처리 기능 확장 :
+    * Activity Exception : 오류 발생 시 다음 Activity로 자동 이동하는 Next 옵션 추가
+
+### *변경*  
+ - 비정형 텍스트 및 데이터 추출 안정성 개선 :  
+   * PickScreenText : Top, Left 기준 오름차순 정렬 적용  
+   * PickScreenText, PickTableData 미리보기 : '/' 문자가 '\/'로 표시되던 문제 개선  
+   * ClickPickText : 텍스트 매칭 로직 개선 (와일드카드 사용 여부에 따른 처리 분리)  
+   * 콤보박스 컨트롤, 라벨 컨트롤 텍스트 읽기 기능 개선     
+  - 셀렉터 시스템 전면 개선  
+    * WIN 셀렉터 하이라이트 무한 표시 방식으로 변경 (ESC로 종료, WEB은 기존 3초 표시 방식 유지)  
+    * WIN, WEB 셀렉터 선택 중 ESC 키로 선택 취소 가능  
+    * 선택 완료 후 노드에 의미 없는 값이 들어가던 문제 수정  
+    * 셀렉터 정보에 개행 포함 시 엔진 오류 발생 문제 수정  
+    * WIN32에서 Control로 모든 타입의 컨트롤 대체 가능하도록 확장  
+- Win32 셀렉터 관련 액티비티 timeout 설정값이 무시되던 문제 수정  
+ - Variables 패널 Date 타입 변수 value가 비어있을 경우 발생하던 오류 수정  
+ - [BuiltIn] TryExcept : Title 수정 시 Script 내용까지 변경되던 문제 수정  
+ - [BuiltIn] MultiThread : break_on_error 옵션 미동작 문제 수정  
+
 ## **Version 2.5.0 - Mar 29, 2024**   
 ### *신규*   
 - [Excel] GetRangeAsCollection - path, password, close 프로퍼티 추가로 단일 사용이 가능하도록 기능 추가
